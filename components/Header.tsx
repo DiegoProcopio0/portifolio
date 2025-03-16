@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { ModeToggle } from './ToggleTheme'
 
 export function Header() {
   const links = [
@@ -11,17 +12,17 @@ export function Header() {
   ]
 
   return (
-    <header className="w-full text-center bg-gray-900 border-b-2 border-b-gray-700 ">
-      <div className="max-w-[90rem] flex justify-between items-center px-10 mx-auto">
+    <header className="w-full text-center border-b-2 border-b-gray-700 ">
+      <div className="max-w-[90rem] flex justify-between items-center px-4 md:px-10 mx-auto">
         <h2 className="sr-only">Header</h2>
         <Image
           src={'/logo.jpeg'}
-          alt=""
-          className="h-10 rounded-full"
+          alt="Logo"
+          className="h-10 rounded-full hover:shadow hover:border-2 border-green-500 transition-all"
           width={40}
           height={40}
         />
-        <ul className="font-bold flex justify-center gap-4 items-center py-8 text-cyan-50/75 decoration-current">
+        <ul className="font-medium flex justify-center gap-4 items-center py-8  decoration-current">
           {links.map((link, index) => (
             <li
               key={index}
@@ -31,8 +32,7 @@ export function Header() {
             </li>
           ))}
         </ul>
-
-        <button>aaa</button>
+        <ModeToggle />
       </div>
     </header>
   )
