@@ -26,7 +26,7 @@ export function Header() {
           {links.map((link, index) => (
             <li
               key={index}
-              className="hover:text-green-500 uppercase transition-colors text-xs sm:text-base"
+              className="hover:text-green-500 uppercase transition-colors text-xs sm:text-base xl:text-xl"
             >
               <Link href={link.to}>{link.name}</Link>
             </li>
