@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ModeToggle } from './ToggleTheme'
 
 export function Header() {
   const links = [
@@ -32,7 +31,6 @@ export function Header() {
             </li>
           ))}
         </ul>
-        <ModeToggle />
       </div>
     </header>
   )

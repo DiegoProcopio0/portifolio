@@ -8,7 +8,7 @@ export function About() {
     <div className="">
       <header className="text-center sm:text-left font-bold sm:pb-0 pb-6 py-2 sm:flex justify-between">
         <div>
-          <h1 className=" mb-4 pb-2  text-3xl">
+          <h1 className="mb-6 pb-2  text-3xl">
             <TypeWriter text="Diego Procopio" />
           </h1>
           <a
@@ -19,24 +19,30 @@ export function About() {
           </a>
         </div>
 
-        <div className="mx-auto sm:mx-0 text-center text-2xl mt-8 px-4 max-w-sm xl:max-w-2xl">
+        <div className="mx-auto font-regular sm:mx-0 text-center text-xl lg:text-2xl mt-8 px-4 max-w-sm xl:max-w-2xl">
           <TypeWriter text="Olá, Sou Diego Procopio front-end dev com foco em desenvolvimento web." />
         </div>
       </header>
 
-      <div className="flex justify-center flex-col items-center sm:flex-row sm:justify-between mt-10">
+      <div className="flex justify-center  flex-col items-center sm:flex-row sm:justify-between md:mt-10">
         <Card>
           <span className="text-blue-400">about</span>
           <span className="mx-2">Diego</span>
           <span>{'{'}</span>
           <div className="ml-9 my-2">
             <span className="text-blue-400 mr-2">Occupation:</span>
-            <span>Dev. Front-end,</span>
+            <span>Dev. web,</span>
           </div>
           <span>{'}'}</span>{' '}
         </Card>
 
-        <Image src="/hand-coding.png" width={192} height={200} alt="image" />
+        <Image
+          src="/hand-coding.png"
+          width={192}
+          height={200}
+          alt="image"
+          className="my-5 md:my-0"
+        />
       </div>
 
       <Card className="mx-auto flex flex-col justify-center items-center">
