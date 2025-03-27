@@ -13,7 +13,7 @@ export function About() {
           </h1>
           <a
             href="#"
-            className="ease-in shadow duration-300 p-3 dark:bg-green-500 bg-green-400 rounded hover:text-green-400 hover:bg-white"
+            className="bg-green-500 font-medium text-xl py-3 px-6 rounded-lg text-white hover:opacity-90 hover:shadow-xl transition-all"
           >
             DOWNLOAD DO CV
           </a>
