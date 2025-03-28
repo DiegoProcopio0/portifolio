@@ -2,35 +2,35 @@ import Image from 'next/image'
 import { Card } from './Card'
 import { TypeWriter } from './TypeWriter'
 import { FaGithub, FaLinkedin, FaVoicemail } from 'react-icons/fa'
+import { ButtonLink } from './ButtonLink'
 
 export function About() {
   return (
     <div className="">
-      <header className="text-center sm:text-left font-bold sm:pb-0 pb-6 py-2 sm:flex justify-between">
+      <header className="justify-between py-2 pb-6 text-center font-bold sm:flex sm:pb-0 sm:text-left">
         <div>
-          <h1 className="mb-6 pb-2  text-3xl">
+          <h1 className="mb-6 pb-2 text-3xl">
             <TypeWriter text="Diego Procopio" />
           </h1>
-          <a
-            href="#"
-            className="bg-green-500 font-medium text-xl py-3 px-6 rounded-lg text-white hover:opacity-90 hover:shadow-xl transition-all"
-          >
-            DOWNLOAD DO CV
-          </a>
+
+          <ButtonLink href="#">DOWNLOAD DO CV</ButtonLink>
         </div>
 
-        <div className="mx-auto font-regular sm:mx-0 text-center text-xl lg:text-2xl mt-8 px-4 max-w-sm xl:max-w-2xl">
-          <TypeWriter text="Olá, Sou Diego Procopio front-end dev com foco em desenvolvimento web." />
+        <div className="font-regular mx-auto mt-8 max-w-sm px-4 text-center text-xl sm:mx-0 lg:text-2xl xl:max-w-2xl">
+          <p>
+            Olá, Sou Diego Procopio front-end dev com foco em desenvolvimento
+            web.
+          </p>
         </div>
       </header>
 
-      <div className="flex justify-center  flex-col items-center sm:flex-row sm:justify-between md:mt-10">
+      <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between md:mt-10">
         <Card>
           <span className="text-blue-400">about</span>
           <span className="mx-2">Diego</span>
           <span>{'{'}</span>
-          <div className="ml-9 my-2">
-            <span className="text-blue-400 mr-2">Occupation:</span>
+          <div className="my-2 ml-9">
+            <span className="mr-2 text-blue-400">Occupation:</span>
             <span>Dev. web,</span>
           </div>
           <span>{'}'}</span>{' '}
@@ -45,28 +45,28 @@ export function About() {
         />
       </div>
 
-      <Card className="mx-auto flex flex-col justify-center items-center">
-        <h2 className="text-center mb-4 text-lg text-blue-400 font-bold ">
+      <Card className="mx-auto flex flex-col items-center justify-center">
+        <h2 className="mb-4 text-center text-lg font-bold text-blue-400">
           Contact
         </h2>
         <div className="flex items-center gap-3">
           <a
             href="https://github.com/DiegoProcopio0/"
-            className="hover:overflow-hidden hover:scale-125 transition-all"
+            className="transition-all hover:scale-125 hover:overflow-hidden"
             target="_blank"
           >
             <FaGithub size={50} color="#1ED760" />
           </a>
           <a
             href="https://www.linkedin.com/in/diego-procopio/"
-            className="hover:overflow-hidden hover:scale-125 transition-all"
+            className="transition-all hover:scale-125 hover:overflow-hidden"
             target="_blank"
           >
             <FaLinkedin size={52} color="#1ED760" />
           </a>
           <a
             href="mailto:diegprocopio98@gmail.com"
-            className="hover:overflow-hidden hover:scale-125 transition-all"
+            className="transition-all hover:scale-125 hover:overflow-hidden"
             target="_blank"
           >
             <FaVoicemail size={60} color="#1ED760" />

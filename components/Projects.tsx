@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import { GoProject } from 'react-icons/go'
+import { ButtonLink } from './ButtonLink'
+import { Title } from './Title'
 
 export function Projects() {
   return (
     <section className="pt-10">
-      <h2 className="text-blue-400 mb-10 text-center text-3xl font-bold sm:text-left">
-        #Meus Projetos
-      </h2>
+      <Title>Meus Projetos</Title>
 
-      <div className="grid rounded-lg grid-cols-1 shadow-lg gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 rounded-lg shadow-lg md:grid-cols-2">
         <Image
           className="rounded-lg"
           width={'600'}
@@ -16,9 +16,9 @@ export function Projects() {
           src="/quiz.png"
           alt="projeto"
         />
-        <div className="flex flex-col md:px-10 pb-4 md:pb-10 gap-6">
+        <div className="flex flex-col gap-6 pb-4 md:px-10 md:pb-10">
           <div className="flex items-center gap-5">
-            <GoProject className="text-green-500 size-8" />
+            <GoProject className="size-8 text-green-500" />
             <h3 className="text-3xl">Quiz</h3>
           </div>
           <p className="text-gray-400">
@@ -26,23 +26,20 @@ export function Projects() {
           </p>
 
           <div className="flex gap-2">
-            <span className="text-emerald-400 bg-emerald-900/80  text-base py-1 px-3 rounded-lg">
+            <span className="rounded-lg bg-emerald-900/80 px-3 py-1 text-base text-emerald-400">
               JavaScript
             </span>
-            <span className="text-emerald-400 bg-emerald-900/80  text-base py-1 px-3 rounded-lg">
+            <span className="rounded-lg bg-emerald-900/80 px-3 py-1 text-base text-emerald-400">
               React
             </span>
-            <span className="text-emerald-400 bg-emerald-900/80  text-base py-1 px-3 rounded-lg">
+            <span className="rounded-lg bg-emerald-900/80 px-3 py-1 text-base text-emerald-400">
               Next
             </span>
           </div>
 
-          <a
-            href="#"
-            className="bg-green-500 self-start font-medium text-base lg:text-xl py-3 px-6 rounded-lg text-white hover:opacity-90 hover:shadow-xl transition-all"
-          >
+          <ButtonLink href="#" className="mr-auto">
             Ver Projeto
-          </a>
+          </ButtonLink>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import Abilities from '@/components/Abilities'
+import { Abilities } from '@/components/Abilities'
 import { About } from '@/components/About'
 import { Experiences } from '@/components/Experiences'
 import { Footer } from '@/components/Footer'
@@ -7,9 +7,9 @@ import { Projects } from '@/components/Projects'
 
 export default function Home() {
   return (
-    <div className="min-h-[100vh] flex flex-col">
+    <div className="flex min-h-[100vh] flex-col">
       <Header />
-      <div className="py-10 mx-auto w-full flex-1 max-w-[90rem] px-4 md:px-10">
+      <div className="mx-auto w-full max-w-[90rem] flex-1 px-4 py-10 md:px-10">
         <About />
         <Abilities />
         <Projects />
