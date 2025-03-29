@@ -13,11 +13,14 @@ const experiences: WorkExperience[] = [
     startDate: '2023-11-1',
     endDate: '',
     technologies: [
-      {
-        iconSvg: '/images/icons/react.svg',
-        name: 'React',
-        startDate: '2022-01-01'
-      }
+      { name: 'JavaScript' },
+      { name: 'TypeScript' },
+      { name: 'Vue.js' },
+      { name: 'Nuxt' },
+      { name: 'Node.js' },
+      { name: 'Express' },
+      { name: 'React' },
+      { name: 'Next' }
     ],
     description: {
       raw: 'Atuei como desenvolvedor frontend, contribuindo para o desenvolvimento de aplicações web e mobile utilizando React e React Native.'

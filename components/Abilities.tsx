@@ -60,7 +60,13 @@ export function Abilities() {
   const mobileIconCount = Math.ceil(abilitiesData.length / 2)
 
   return (
-    <section className="w-full pt-10">
+    <motion.section
+      variants={fadeIn}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.6 }}
+      className="w-full pt-10"
+    >
       <Title>Conhecimentos</Title>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8 lg:grid-cols-5 lg:gap-12 2xl:grid-cols-7">
         {abilitiesData
@@ -84,6 +90,6 @@ export function Abilities() {
             </motion.div>
           ))}
       </div>
-    </section>
+    </motion.section>
   )
 }

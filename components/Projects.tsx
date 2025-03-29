@@ -1,15 +1,24 @@
+'use client'
 import Image from 'next/image'
 import { GoProject } from 'react-icons/go'
 import { ButtonLink } from './ButtonLink'
 import { Title } from './Title'
 import { TechBadge } from './techBadge'
-import { techBadgeAnimation } from '@/lib/animations'
+import { fadeIn, techBadgeAnimation } from '@/lib/animations'
+import { motion } from 'framer-motion'
 
 const technologies = ['JavaScript', 'React', 'Next']
 
 export function Projects() {
   return (
-    <section className="pt-10" id="projects">
+    <motion.section
+      variants={fadeIn}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.6 }}
+      className="pt-10"
+      id="projects"
+    >
       <Title>Meus Projetos</Title>
 
       <div className="grid grid-cols-1 gap-4 rounded-lg shadow-lg md:grid-cols-2">
@@ -40,11 +49,14 @@ export function Projects() {
             ))}
           </div>
 
-          <ButtonLink href="#" className="mr-auto">
+          <ButtonLink
+            href="https://github.com/DiegoProcopio0/quiz"
+            className="mr-auto"
+          >
             Ver Projeto
           </ButtonLink>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
