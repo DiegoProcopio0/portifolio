@@ -2,10 +2,14 @@ import Image from 'next/image'
 import { GoProject } from 'react-icons/go'
 import { ButtonLink } from './ButtonLink'
 import { Title } from './Title'
+import { TechBadge } from './techBadge'
+import { techBadgeAnimation } from '@/lib/animations'
+
+const technologies = ['JavaScript', 'React', 'Next']
 
 export function Projects() {
   return (
-    <section className="pt-10">
+    <section className="pt-10" id="projects">
       <Title>Meus Projetos</Title>
 
       <div className="grid grid-cols-1 gap-4 rounded-lg shadow-lg md:grid-cols-2">
@@ -18,7 +22,7 @@ export function Projects() {
         />
         <div className="flex flex-col gap-6 pb-4 md:px-10 md:pb-10">
           <div className="flex items-center gap-5">
-            <GoProject className="size-8 text-green-500" />
+            <GoProject className="size-8 text-emerald-500" />
             <h3 className="text-3xl">Quiz</h3>
           </div>
           <p className="text-gray-400">
@@ -26,15 +30,14 @@ export function Projects() {
           </p>
 
           <div className="flex gap-2">
-            <span className="rounded-lg bg-emerald-900/80 px-3 py-1 text-base text-emerald-400">
-              JavaScript
-            </span>
-            <span className="rounded-lg bg-emerald-900/80 px-3 py-1 text-base text-emerald-400">
-              React
-            </span>
-            <span className="rounded-lg bg-emerald-900/80 px-3 py-1 text-base text-emerald-400">
-              Next
-            </span>
+            {technologies.map((tech, i) => (
+              <TechBadge
+                key={i}
+                name={tech}
+                {...techBadgeAnimation}
+                transition={{ duration: 0.2, delay: i * 0.2 }}
+              />
+            ))}
           </div>
 
           <ButtonLink href="#" className="mr-auto">

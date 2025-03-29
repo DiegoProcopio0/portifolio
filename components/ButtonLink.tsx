@@ -8,7 +8,7 @@ export function ButtonLink({ href, children, className }: ButtonLinkProps) {
   return (
     <a
       href={href}
-      className={`rounded-lg bg-green-500 px-6 py-3 text-xl font-medium text-white transition-all hover:opacity-90 hover:shadow-xl ${className}`}
+      className={`flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-3 text-gray-50 transition-all hover:bg-emerald-500 disabled:opacity-50 ${className}`}
     >
       {children}
     </a>

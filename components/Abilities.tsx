@@ -68,13 +68,13 @@ export function Abilities() {
           .map(({ icon: Icon, name, color }, index) => (
             <motion.div
               key={index}
-              className="group border-opacity-10 flex h-24 transform items-center justify-center rounded-lg border border-green-500 bg-gradient-to-r from-blue-900 to-blue-950 p-2 backdrop-blur-[4px] transition-transform duration-300 hover:-translate-y-2 hover:rotate-3 hover:shadow-lg"
+              className="group border-opacity-10 flex h-24 transform items-center justify-center rounded-lg border border-emerald-500 bg-gradient-to-r from-blue-900 to-blue-950 p-2 backdrop-blur-[4px] transition-transform duration-300 hover:-translate-y-2 hover:rotate-3 hover:shadow-lg"
               style={{ perspective: '1000px' }}
               initial="hidden"
               animate="visible"
               variants={fadeIn}
             >
-              <div className="group border-opacity-10 flex h-full w-full transform items-center justify-center rounded-lg border border-green-500 bg-gradient-to-r from-blue-900 to-blue-950 backdrop-blur-[4px] transition-transform duration-300 hover:-translate-y-2 hover:rotate-3 hover:shadow-lg">
+              <div className="group border-opacity-10 flex h-full w-full transform items-center justify-center rounded-lg border border-emerald-500 bg-gradient-to-r from-blue-900 to-blue-950 backdrop-blur-[4px] transition-transform duration-300 hover:-translate-y-2 hover:rotate-3 hover:shadow-lg">
                 <Icon
                   className="text-5xl transition-transform duration-300 ease-out group-hover:scale-110 group-hover:transform"
                   style={{ color }}

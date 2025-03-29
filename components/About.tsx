@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import { Card } from './Card'
 import { TypeWriter } from './TypeWriter'
-import { FaGithub, FaLinkedin, FaVoicemail } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { ButtonLink } from './ButtonLink'
+import { IoIosMail } from 'react-icons/io'
 
 export function About() {
   return (
@@ -55,21 +56,21 @@ export function About() {
             className="transition-all hover:scale-125 hover:overflow-hidden"
             target="_blank"
           >
-            <FaGithub size={50} color="#1ED760" />
+            <FaGithub size={50} color="#00bc7d" />
           </a>
           <a
             href="https://www.linkedin.com/in/diego-procopio/"
             className="transition-all hover:scale-125 hover:overflow-hidden"
             target="_blank"
           >
-            <FaLinkedin size={52} color="#1ED760" />
+            <FaLinkedin size={52} color="#00bc7d" />
           </a>
           <a
             href="mailto:diegprocopio98@gmail.com"
             className="transition-all hover:scale-125 hover:overflow-hidden"
             target="_blank"
           >
-            <FaVoicemail size={60} color="#1ED760" />
+            <IoIosMail size={70} color="#00bc7d" />
           </a>
         </div>
       </Card>
