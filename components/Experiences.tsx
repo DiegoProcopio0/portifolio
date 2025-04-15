@@ -1,6 +1,9 @@
+'use client'
 import { Title } from './Title'
 import { ExperienceItem } from './ExperienceItem'
 import { WorkExperience } from '@/@types/work-experience'
+import { motion } from 'framer-motion'
+import { fadeUpAnimation } from '@/lib/animations'
 
 const experiences: WorkExperience[] = [
   {
@@ -30,8 +33,10 @@ const experiences: WorkExperience[] = [
 
 export function Experiences() {
   return (
-    <section
+    <motion.section
       className="flex flex-col pt-10 md:flex-row md:gap-10"
+      {...fadeUpAnimation}
+      transition={{ duration: 0.5 }}
       id="experiencias"
     >
       <Title>
@@ -45,6 +50,6 @@ export function Experiences() {
           />
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }

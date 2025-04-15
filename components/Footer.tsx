@@ -2,10 +2,16 @@
 
 import { FaLinkedinIn } from 'react-icons/fa'
 import { IoIosMail } from 'react-icons/io'
+import { motion } from 'framer-motion'
+import { fadeUpAnimation } from '@/lib/animations'
 
 export function Footer() {
   return (
-    <footer className="inherit bottom-0 w-full border-t-2 border-t-gray-700 py-5">
+    <motion.footer
+      className="inherit bottom-0 w-full border-t-2 border-t-gray-700 py-5"
+      {...fadeUpAnimation}
+      transition={{ duration: 0.5 }}
+    >
       <div className="mx-auto flex max-w-[90rem] flex-row-reverse items-center justify-between px-4 md:px-10">
         <h2 className="sr-only">Footer</h2>
         <div className="flex flex-col gap-2"></div>
@@ -18,6 +24,6 @@ export function Footer() {
           </a>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   )
 }

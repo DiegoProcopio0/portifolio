@@ -6,17 +6,12 @@ import { TypeWriter } from './TypeWriter'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { ButtonLink } from './ButtonLink'
 import { IoIosMail } from 'react-icons/io'
-import { fadeIn } from '@/lib/animations'
+import { fadeUpAnimation } from '@/lib/animations'
 
 export function About() {
   return (
     <>
-      <motion.div
-        variants={fadeIn}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.6 }}
-      >
+      <motion.div {...fadeUpAnimation} transition={{ duration: 0.5 }}>
         <header className="justify-between py-2 pb-6 text-center font-bold sm:flex sm:pb-0 sm:text-left">
           <div>
             <h1 className="mb-6 pb-2 text-3xl">

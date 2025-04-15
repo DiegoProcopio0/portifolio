@@ -18,6 +18,7 @@ import {
 } from 'react-icons/si'
 import { motion } from 'framer-motion'
 import { Title } from './Title'
+import { fadeIn, fadeUpAnimation } from '@/lib/animations'
 
 const abilitiesData = [
   { icon: SiJavascript, name: 'JavaScript', color: '#F7DF1E' },
@@ -52,19 +53,12 @@ export function Abilities() {
     }
   }, [])
 
-  const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }
-  }
-
   const mobileIconCount = Math.ceil(abilitiesData.length / 2)
 
   return (
     <motion.section
-      variants={fadeIn}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 0.6 }}
+      {...fadeUpAnimation}
+      transition={{ duration: 0.5 }}
       className="w-full pt-10"
     >
       <Title>Conhecimentos</Title>

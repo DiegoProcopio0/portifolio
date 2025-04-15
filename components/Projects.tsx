@@ -4,7 +4,7 @@ import { GoProject } from 'react-icons/go'
 import { ButtonLink } from './ButtonLink'
 import { Title } from './Title'
 import { TechBadge } from './techBadge'
-import { fadeIn, techBadgeAnimation } from '@/lib/animations'
+import { fadeUpAnimation, techBadgeAnimation } from '@/lib/animations'
 import { motion } from 'framer-motion'
 
 const technologies = ['JavaScript', 'React', 'Next']
@@ -12,10 +12,8 @@ const technologies = ['JavaScript', 'React', 'Next']
 export function Projects() {
   return (
     <motion.section
-      variants={fadeIn}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 0.6 }}
+      {...fadeUpAnimation}
+      transition={{ duration: 0.5 }}
       className="pt-10"
       id="projects"
     >
