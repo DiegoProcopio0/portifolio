@@ -26,7 +26,7 @@ const experiences: WorkExperience[] = [
       { name: 'Next' }
     ],
     description: {
-      raw: 'Atuei como desenvolvedor frontend, contribuindo para o desenvolvimento de aplicações web e mobile utilizando React e React Native.'
+      raw: 'Atuei como desenvolvedor júnior em projetos diversos, contribuindo tanto no front-end quanto no back-end. Participei do desenvolvimento de uma dashboard para emissão de notas fiscais utilizando Vue 3, TypeScript e TailwindCSS, além de realizar manutenções na API do sistema, construída com Node.js, Express, Clean Architecture e TypeScript, incluindo testes unitários e E2E com Jest. Também trabalhei na criação de uma dashboard para campanhas promocionais e de engajamento, atendendo grandes clientes como Nubank e Nissan, dando suporte à API desenvolvida com Node.js, Express, JavaScript e arquitetura CQRS. Tenho experiência no desenvolvimento de landing pages com Nuxt e TailwindCSS, além da construção de uma PWA com React, React Query e TypeScript. Ao longo dos projetos, atuei em times ágeis utilizando a metodologia Scrum.'
     }
   }
 ]

@@ -25,8 +25,9 @@ export function About() {
 
           <div className="mx-auto mt-8 max-w-sm px-4 text-center text-base font-medium sm:mx-0 md:text-xl lg:text-2xl xl:max-w-2xl">
             <p>
-              Olá, sou Diego Procopio, desenvolvedor full stack com experiência
-              em criar e manter aplicações web.
+              Olá, sou Diego Procopio, desenvolvedor full stack júnior com
+              experiência em aplicações web utilizando Vue, React, Node.js e
+              TypeScript.
             </p>
           </div>
         </header>
