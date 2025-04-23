@@ -75,7 +75,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
           <span className="text-gray-500">
             {formattedStartDate} • {formattedEndDate} • ({formattedDuration})
           </span>
-          <div className="text-gray-400">{description.raw}</div>
+          <div className="text-gray-400 whitespace-pre-line">{description.raw}</div>
         </div>
         <p className="mt-6 mb-3 text-sm font-semibold text-gray-400">
           Competências
