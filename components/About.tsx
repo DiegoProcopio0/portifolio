@@ -18,7 +18,7 @@ export function About() {
               <TypeWriter text="Diego Procopio" />
             </h1>
 
-            <ButtonLink className="mx-auto !max-w-[320px] md:mr-auto" href="#">
+            <ButtonLink className="mx-auto !max-w-[320px] md:mr-auto" href="/diego-dev.pdf">
               DOWNLOAD DO CV
             </ButtonLink>
           </div>

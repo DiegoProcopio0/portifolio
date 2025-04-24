@@ -19,7 +19,7 @@ export function Projects() {
     >
       <Title>Meus Projetos</Title>
 
-      <div className="grid grid-cols-1 gap-4 rounded-lg shadow-lg md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 place-items-center rounded-lg shadow-project md:grid-cols-2">
         <Image
           className="rounded-lg"
           width={'600'}
@@ -27,7 +27,7 @@ export function Projects() {
           src="/quiz.png"
           alt="projeto"
         />
-        <div className="flex flex-col gap-6 pb-4 md:px-10 md:pb-10">
+        <div className="flex flex-col gap-6 py-4 px-4 md:px-10 md:py-10">
           <div className="flex items-center gap-5">
             <GoProject className="size-8 text-emerald-500" />
             <h3 className="text-3xl">Quiz</h3>
@@ -49,7 +49,7 @@ export function Projects() {
 
           <ButtonLink
             href="https://github.com/DiegoProcopio0/quiz"
-            className="mr-auto"
+            className="mr-auto px-3 py-2"
           >
             Ver Projeto
           </ButtonLink>

@@ -13,7 +13,7 @@ export function ContactItem({ icon: Icon, className, ...props }: AnchorProps) {
   return (
     <motion.a
       className={cn(
-        'border-opacity-10 flex flex-grow cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border border-emerald-500 p-6 text-center backdrop-blur-2xl transition-transform duration-200',
+        'border-opacity-10 hover:!opacity-70 flex flex-grow cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border border-emerald-500 p-6 text-center backdrop-blur-2xl transition-all duration-200',
         className
       )}
       {...props}

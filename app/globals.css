@@ -4,6 +4,12 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+.shadow-project {
+  box-shadow: 3px 8px 25px -9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 8px 25px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 8px 25px -9px rgba(0,0,0,0.75);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
