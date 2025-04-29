@@ -19,6 +19,7 @@ import {
 import { motion } from 'framer-motion'
 import { Title } from './Title'
 import { fadeIn, fadeUpAnimation } from '@/lib/animations'
+import { Button } from './Button'
 
 const abilitiesData = [
   { icon: SiJavascript, name: 'JavaScript', color: '#F7DF1E' },
@@ -39,6 +40,10 @@ const abilitiesData = [
 
 export function Abilities() {
   const [isMobile, setIsMobile] = useState(false)
+
+  const toggleAllAbilities = () => {
+    setIsMobile((prev) => !prev)
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -84,6 +89,9 @@ export function Abilities() {
             </motion.div>
           ))}
       </div>
+      <Button className="mx-auto mt-5 md:hidden" onClick={toggleAllAbilities}>
+        {isMobile ? 'Ver todos' : 'Esconder'}
+      </Button>
     </motion.section>
   )
 }
