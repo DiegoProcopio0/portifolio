@@ -8,7 +8,7 @@ import { fadeUpAnimation, techBadgeAnimation } from '@/lib/animations'
 
 const contacts = [
   {
-    href: 'https://contate.me/diegodev',
+    href: 'https://contate.me/5519971240888',
     target: '_blank',
     title: 'Whatsapp',
     description: '(19) 971240888',
