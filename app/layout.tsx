@@ -3,6 +3,7 @@ import './globals.css'
 import { Metadata } from 'next'
 import { ThemeProvider } from '@/components/theme-provider'
 import { BackToTop } from '@/components/BackToTop'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -61,6 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" suppressHydrationWarning>
+      <GoogleTagManager gtmId="G-DPK7WLRCQZ" />
       <body className={`${poppins.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
